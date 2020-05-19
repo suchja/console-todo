@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace console_todo
 {
@@ -6,7 +7,12 @@ namespace console_todo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Todo> todos = new List<Todo>();
+
+            Console.Write("Bitte gib eine Aufgabe ein: ");
+            string todoName = Console.ReadLine();
+
+            todos.Add(new Todo(todoName));
         }
     }
 }
