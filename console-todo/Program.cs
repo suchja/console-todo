@@ -29,6 +29,15 @@ namespace console_todo
                         break;
 
                     case UserActivities.ListTopTodos:
+                        int topTodoCount = todos.Count;
+                        if (topTodoCount > 3)
+                        {
+                            topTodoCount = 3;
+                        }
+                        for (int i = 0; i < topTodoCount; i++)
+                        {
+                            ConsoleView.ShowToUser(todos[i]);
+                        }
                         break;
 
                     case UserActivities.Exit:

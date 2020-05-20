@@ -34,6 +34,11 @@ namespace console_todo
             return Console.ReadLine();
         }
 
+        public static void ShowToUser(Todo theTodo)
+        {
+            Console.WriteLine(theTodo.Name);
+        }
+
         private static string GetUserInput()
         {
             Console.WriteLine("### TODO-APP ###");
