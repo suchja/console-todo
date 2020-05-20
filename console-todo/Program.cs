@@ -7,29 +7,38 @@ namespace console_todo
     {
         AddTodo = 0,
         ListTopTodos,
-        Invalid
+        Exit
     }
 
     class Program
     {
         static void Main(string[] args)
         {
+            bool isExitRequested = false;
             List<Todo> todos = new List<Todo>();
-            UserActivities nextActivity = ConsoleView.GetNextActivityFromUser();
+            UserActivities nextActivity;
 
-            switch (nextActivity)
+            while (!isExitRequested)
             {
-                case UserActivities.AddTodo:
-                    string todoName = ConsoleView.GetTodoNameFromUser();
-                    todos.Add(new Todo(todoName));
-                    break;
+                nextActivity = ConsoleView.GetNextActivityFromUser();
+                switch (nextActivity)
+                {
+                    case UserActivities.AddTodo:
+                        string todoName = ConsoleView.GetTodoNameFromUser();
+                        todos.Add(new Todo(todoName));
+                        break;
 
-                case UserActivities.ListTopTodos:
-                    break;
-                case UserActivities.Invalid:
-                    break;
-                default:
-                    break;
+                    case UserActivities.ListTopTodos:
+                        break;
+
+                    case UserActivities.Exit:
+                        isExitRequested = true;
+                        break;
+
+                    default:
+                        break;
+                }
+
             }
         }
     }

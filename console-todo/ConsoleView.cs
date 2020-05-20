@@ -8,7 +8,7 @@ namespace console_todo
     {
         public static UserActivities GetNextActivityFromUser()
         {
-            UserActivities result = UserActivities.Invalid;
+            UserActivities result = UserActivities.Exit;
             bool isUserInputValid = false;
 
             while (!isUserInputValid)
@@ -40,7 +40,8 @@ namespace console_todo
             Console.WriteLine("Was möchtest du als nächstes machen?");
             Console.WriteLine("1 - Neues ToDo hinzufügen");
             Console.WriteLine("2 - Top 3 Todos anzeigen");
-            Console.Write("Deine Auswahl (1 oder 2): ");
+            Console.WriteLine("X - Anwendung schließen");
+            Console.Write("Deine Auswahl (1, 2 oder X): ");
 
             return Console.ReadLine();
         }
@@ -49,13 +50,16 @@ namespace console_todo
         {
             UserActivities result;
 
-            switch (input)
+            switch (input.ToLower())
             {
                 case "1":
                     result = UserActivities.AddTodo;
                     break;
                 case "2":
                     result = UserActivities.ListTopTodos;
+                    break;
+                case "x":
+                    result = UserActivities.Exit;
                     break;
                 default:
                     throw new NotImplementedException($"Deine Eingabe ('{input}') wird momentan nicht unterstützt!");
