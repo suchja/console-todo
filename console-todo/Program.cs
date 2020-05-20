@@ -34,10 +34,12 @@ namespace console_todo
                         {
                             topTodoCount = 3;
                         }
+                        string[] topTodos = new string[topTodoCount];
                         for (int i = 0; i < topTodoCount; i++)
                         {
-                            ConsoleView.ShowToUser(todos[i]);
+                            topTodos[i] = $"{i+1} - {todos[i].Name}";
                         }
+                        ConsoleView.ShowTopTodosToUser(topTodos);
                         break;
 
                     case UserActivities.Exit:

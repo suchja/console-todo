@@ -34,9 +34,13 @@ namespace console_todo
             return Console.ReadLine();
         }
 
-        public static void ShowToUser(Todo theTodo)
+        public static void ShowTopTodosToUser(string[] todos)
         {
-            Console.WriteLine(theTodo.Name);
+            Console.WriteLine($"Die Top {todos.Length} ToDos sind:");
+            foreach (var item in todos)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         private static string GetUserInput()
