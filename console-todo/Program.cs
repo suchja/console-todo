@@ -6,7 +6,7 @@ namespace console_todo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("### Console ToDo-App ###");
         }
     }
 }
