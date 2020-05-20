@@ -1,29 +1,30 @@
-# ToDo-App (Console) - Übungsmoment 1
+# ToDo-App (Console) - Ãœbungsmoment 1
 ## Basis-Aufgabe
 Erstelle eine einfache Aufgabenverwaltung als Konsolenanwendung.
 
 ### Lernziel
-In diesem Übungsmoment geht es um 
+In diesem Ãœbungsmoment geht es um 
 - den generellen Aufbau und Ablauf einer Konsolenanwendung,
 - die C# Syntax zur Ein- und Ausgabe auf der Konsole und 
 - die Verwendung von Auflistungen (insbesondere `List<T>`).
 
 ### Anforderungen / User Stories
-Erstelle eine *.NET Core Console-App*. Sie soll folgende Funktionalitäten bieten:
-#1 Als Anwender möchte ich die Beschreibung einer Aufgabe eingeben um sie verwalten zu können
-#2 Als Anwender möchte ich mir die Beschreibung der 3 wichtigsten Aufgaben anzeigen lassen um zu sehen was ich als nächstes machen kann
-3. Als Anwender möchte ich mir die Beschreibung aller gespeicherten Aufgaben anzeigen lassen um sie verwalten zu können
-4. Als Anwender möchte ich eine Aufgabe als erledigt markieren um diese aus der Aufgabenverwaltung zu entfernen
+Erstelle eine *.NET Core Console-App*. Sie soll folgende FunktionalitÃ¤ten bieten:
+
+1. Als Anwender mÃ¶chte ich die Beschreibung einer Aufgabe eingeben um sie verwalten zu kÃ¶nnen
+2. Als Anwender mÃ¶chte ich mir die Beschreibung der 3 wichtigsten Aufgaben anzeigen lassen um zu sehen was ich als nÃ¤chstes machen kann
+3. Als Anwender mÃ¶chte ich mir die Beschreibung aller gespeicherten Aufgaben anzeigen lassen um sie verwalten zu kÃ¶nnen
+4. Als Anwender mÃ¶chte ich eine Aufgabe als erledigt markieren um diese aus der Aufgabenverwaltung zu entfernen
 
 ### Randbedingungen (nicht-funktionale Eigenschaften)
-1. Die Daten können im Speicher gehalten werden und brauchen nicht in eine Datei, DB, ... gespeichert werden
-2. Die genaue Benutzerführung und Befehle sind dir überlassen. Es müssen jedoch die definierten Anforderungen umgesetzt werden
+1. Die Daten kÃ¶nnen im Speicher gehalten werden und brauchen nicht in eine Datei, DB, ... gespeichert werden
+2. Die genaue BenutzerfÃ¼hrung und Befehle sind dir Ã¼berlassen. Es mÃ¼ssen jedoch die definierten Anforderungen umgesetzt werden
 3. Du kannst eine Auflistung deiner Wahl benutzen (eine `List<>` eigent sich beispielsweise sehr gut)
 
 ### Hilfe
-Die folgenden Ressourcen können dir bei der Lösung dieser Übung behilflich sein:
+Die folgenden Ressourcen kÃ¶nnen dir bei der LÃ¶sung dieser Ãœbung behilflich sein:
 
 ## Bonus-Aufgabe
-Füge folgende weitere Funktionalitäten hinzu:
+FÃ¼ge folgende weitere FunktionalitÃ¤ten hinzu:
 
-5. Als Anwender möchte ich die Reihenfolge der Aufgaben ändern um eine Aufgabe früher oder später zu bearbeiten
+5. Als Anwender mÃ¶chte ich die Reihenfolge der Aufgaben Ã¤ndern um eine Aufgabe frÃ¼her oder spÃ¤ter zu bearbeiten
