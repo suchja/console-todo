@@ -1,8 +1,8 @@
-# ToDo-App (Console) - Übungsmoment 1
+# Aufgabenverwaltung mit `List<T>` (Console) - ÜbungsMoment #1
 ## Basis-Aufgabe
 Erstelle eine einfache Aufgabenverwaltung als Konsolenanwendung.
 
-### Lernziel
+### Ziel der Übung
 In diesem Übungsmoment geht es um 
 - den generellen Aufbau und Ablauf einer Konsolenanwendung,
 - die C# Syntax zur Ein- und Ausgabe auf der Konsole und 
@@ -24,7 +24,16 @@ Erstelle eine *.NET Core Console-App*. Sie soll folgende Funktionalitäten biete
 ### Hilfe
 Die folgenden Ressourcen können dir bei der Lösung dieser Übung behilflich sein:
 
+### Musterlösung
+
+### Teste dein Wissen
+Versuche folgende Fragen zu den Themen aus dieser Übung zu beantworten. Damit kannst du erkennen was du wirklich verstanden hast und wo du vielleicht nochmals genauer hinschauen solltest.
+
+1. tbd
+
 ## Bonus-Aufgabe
 Füge folgende weitere Funktionalitäten hinzu:
 
 5. Als Anwender möchte ich die Reihenfolge der Aufgaben ändern um eine Aufgabe früher oder später zu bearbeiten
+
+## Variation für Fortgeschrittene
